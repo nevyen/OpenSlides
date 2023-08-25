@@ -236,7 +236,11 @@ file](#Configuration-of-the-generated-Docker-Compose-YAML-file).
 See [the proxy service](https://github.com/OpenSlides/OpenSlides/blob/main/proxy) for
 details on provided methods for HTTPS activation.
 
+## Changing default port
+When changing the default port. All commads using the *openslides*-tool need to be run with the *address*-flag.
+For Example when changing default port to 8888:
 
+    $ ./openslides initial-data --no-ssl -a "localhost:8888"
 
 ## Email
 
